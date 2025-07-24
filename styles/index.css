@@ -21,6 +21,7 @@ section.hero {
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    overflow: auto;
 }
 
 section.hero div.title-container {
@@ -28,17 +29,20 @@ section.hero div.title-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    word-break: break-word;
 }
 
 section.hero h1 {
     color: #F9FAF8;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0;
 }
 
 section.hero p {
     color: #E5E7EB;
-    font-size: 1.125rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 400px
 }
 
 section.hero button {
@@ -48,7 +52,7 @@ section.hero button {
     font-weight: 600;
     padding: 1rem 1.5rem; /* 0.5rem 0.75rem for desktop */
     min-width: 100px;
-    max-width: 100%;
+    width: fit-content;
     border-radius: 4px;
     border: none;
     cursor: pointer;
@@ -59,6 +63,36 @@ section.hero img {
     width: 100%;
     height: auto;
 }
+
+@media (min-width: 425px) {
+
+section.hero h1 {
+    font-size: 3rem; /* 48px */
+}
+
+section.hero p {
+    font-size: 1.125rem; /* 18px */
+}
+    
+}
+
+@media (min-width: 768px) {
+section.hero {
+    flex-direction: row;
+}
+
+section.hero img {
+    max-width: 600px;
+    width: 50%;
+}
+
+section.hero div.title-container {
+    text-align: left;
+    align-items: flex-start;
+}
+
+}
+
 
 /* Random Info here*/
 
