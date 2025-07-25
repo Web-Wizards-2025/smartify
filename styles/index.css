@@ -1,5 +1,6 @@
 /* Variables for repeated values */
 :root {
+  --header-logo-color: #F9FAF8; /* Defines the logo color based on design guidelines */
   --hero-h1-font-size: 3rem; /* Defines the heading font size (48px) based on design guidelines */
   --hero-p-color: #e5e7eb; /* Sets the paragraph text color based on design guidelines */
   --hero-p-font-size: 1.125rem; /* Sets the paragraph font size (18px) based on design guidelines */
@@ -18,7 +19,97 @@ body {
   margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth; /* smooth scroll for anchor links */
+}
+
 /* Header here*/
+/* adjusted for mobile use first*/
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--featprod-title-color); /* From guidelines */
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin-right: 0;
+    padding: 0;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: var(--hero-p-color);
+    text-decoration: none;
+    font-size: var(--hero-p-font-size);
+}
+
+.logo {
+    font-size: 1.5rem; /* From guidelines */
+    font-weight: bold;
+    color: var(--header-logo-color); /* From guidelines */
+    margin-left: 0;
+    padding: 0;
+}
+
+.navbar a:hover {
+    color: #f9faf8cc;
+}
+
+.logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*For desktops specific*/
+@media (min-width: 1025px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .logo {
+    margin-left: 7%;
+    margin-bottom: 0;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 2rem;
+    margin-right: 7%;
+  }
+}
+
+/*For tablets specific*/
+@media (min-width: 601px) and (max-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    color: var(--featprod-title-color); /* From guidelines */
+  }
+
+  .logo {
+    margin-left: 10%;
+    margin-bottom: 0;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 2rem;
+    margin-right: 10%;
+  }
+}
+
 
 /* Hero here*/
 
@@ -297,3 +388,49 @@ body {
 /* Call to action here */
 
 /* Footer here */
+footer {
+  background-color: var(--featprod-title-color); /* From guidelines */
+  color: var(--hero-p-color);; /* From guidelines */
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--hero-p-color); /* From guidelines */
+  text-decoration: none;
+}
+
+/* footer button design recycled from sign up button from hero */
+.top-button {
+  display: inline-block;
+  background-color: #3882f6; /* From guidelines */
+  color: var(--hero-p-color);
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  min-width: 120px;
+  width: fit-content;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+/* button actions  are also recycled from hero */
+.top-button:hover,
+.top-button:focus {
+  background-color: #2b6cb0;
+}
+.icons {
+  margin-top: 2rem;
+}
+.icons img{
+  width: 3rem;
+  height: 3rem;
+  color: var(--featprod-title-color); /* From guidelines */
+  object-fit: cover;
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
