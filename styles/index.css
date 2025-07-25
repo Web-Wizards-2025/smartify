@@ -3,6 +3,8 @@
   --hero-h1-font-size: 3rem; /* Defines the heading font size (48px) based on design guidelines */
   --hero-p-color: #e5e7eb; /* Sets the paragraph text color based on design guidelines */
   --hero-p-font-size: 1.125rem; /* Sets the paragraph font size (18px) based on design guidelines */
+  --featprod-title-color: #1f2937; /*Feature products section title color based on design guidelines*/
+  --featprod-title-font-size: 2.25rem; /*Feature products section title size (36px) based on design guidelines*/
 }
 
 /* Global styles */
@@ -92,6 +94,82 @@ body {
   height: auto;
 }
 
+/* FEATURED PRODUCTS SECTION */
+
+.featured-products {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.featured-products-title {
+  font-size: var(--featprod-title-font-size);
+  font-weight: 900;
+  color: var(--featprod-title-color);
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.cards-one,
+.cards-two,
+.cards-three,
+.cards-four {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  border: solid 2px #3882f6;
+  border-radius: 8px;
+  height: 150px;
+  width: 150px;
+}
+
+.cards-bg {
+  object-fit: cover;
+  transition: filter 0.4s ease;
+  height: 150px;
+  width: 150px;
+}
+
+.cards-subtext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e5e7eb;
+  font-size: 1.3rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.cards-one:active .cards-bg,
+.cards-two:active .cards-bg,
+.cards-three:active .cards-bg,
+.cards-four:active .cards-bg {
+  filter: blur(4px);
+  background-color: #3882f6;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.cards-one:active .cards-subtext,
+.cards-two:active .cards-subtext,
+.cards-three:active .cards-subtext,
+.cards-four:active .cards-subtext {
+  opacity: 1;
+}
+
 /* ===== HERO SECTION MEDIA QUERIES ===== */
 
 /* Tablet-specific styles (screens from 601px up to 1024px) */
@@ -108,6 +186,29 @@ body {
     font-size: var(
       --hero-p-font-size
     ); /* Sets button font size to 18px, matching the paragraph font size */
+  }
+
+  /* FEATURED PRODUCTS SECTION */
+
+  .cards {
+    gap: 2rem;
+  }
+
+  .cards-bg {
+    height: 200px;
+    width: 200px;
+  }
+
+  .cards-one,
+  .cards-two,
+  .cards-three,
+  .cards-four {
+    height: 200px;
+    width: 200px;
+  }
+
+  .cards-subtext {
+    font-size: 1.7rem;
   }
 }
 
@@ -142,71 +243,55 @@ body {
       --hero-p-font-size
     ); /* Confirms 18px button font size for desktop, matching paragraph */
   }
-}
-.featured-products {
-  text-align: center;
+
+  /* FEATURED PRODUCTS SECTION */
+
+  .cards {
+    gap: 2rem;
+  }
+
+  .cards-column-one,
+  .cards-column-two {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .cards-bg {
+    height: 200px;
+    width: 200px;
+  }
+
+  .cards-one,
+  .cards-two,
+  .cards-three,
+  .cards-four {
+    height: 200px;
+    width: 200px;
+  }
+
+  .cards-subtext {
+    font-size: 1.75rem;
+  }
+
+  .cards-one:hover .cards-bg,
+  .cards-two:hover .cards-bg,
+  .cards-three:hover .cards-bg,
+  .cards-four:hover .cards-bg {
+    filter: blur(4px);
+    background-color: #3882f6;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .cards-one:hover .cards-subtext,
+  .cards-two:hover .cards-subtext,
+  .cards-three:hover .cards-subtext,
+  .cards-four:hover .cards-subtext {
+    opacity: 1;
+  }
 }
 
-.featured-products-title {
-  font-size: 36px;
-  font-weight: 900;
-  color: #1f2937;
-}
-
-.cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-.cards-one,
-.cards-two,
-.cards-three,
-.cards-four {
-  position: relative;
-  border: solid 2px #3882f6;
-  border-radius: 8px;
-  height: 200px;
-  width: 200px;
-}
-
-.cards-bg {
-  object-fit: cover;
-  transition: filter 0.4s ease;
-}
-
-.cards-subtext {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #e5e7eb;
-  font-size: 1.5rem;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  pointer-events: none;
-  z-index: 2;
-}
-
-.cards-one:hover .cards-bg,
-.cards-two:hover .cards-bg,
-.cards-three:hover .cards-bg,
-.cards-four:hover .cards-bg {
-  filter: blur(4px);
-  background-color: #3882f6;
-  opacity: 0.5;
-  cursor: pointer;
-}
-
-.cards-one:hover .cards-subtext,
-.cards-two:hover .cards-subtext,
-.cards-three:hover .cards-subtext,
-.cards-four:hover .cards-subtext {
-  opacity: 1;
-}
 /* Testimonial here*/
 
 /* Call to action here */
