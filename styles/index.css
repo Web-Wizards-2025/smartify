@@ -143,7 +143,70 @@ body {
     ); /* Confirms 18px button font size for desktop, matching paragraph */
   }
 }
+.featured-products {
+  text-align: center;
+}
 
+.featured-products-title {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.cards-one,
+.cards-two,
+.cards-three,
+.cards-four {
+  position: relative;
+  border: solid 2px #3882f6;
+  border-radius: 8px;
+  height: 200px;
+  width: 200px;
+}
+
+.cards-bg {
+  object-fit: cover;
+  transition: filter 0.4s ease;
+}
+
+.cards-subtext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e5e7eb;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.cards-one:hover .cards-bg,
+.cards-two:hover .cards-bg,
+.cards-three:hover .cards-bg,
+.cards-four:hover .cards-bg {
+  filter: blur(4px);
+  background-color: #3882f6;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.cards-one:hover .cards-subtext,
+.cards-two:hover .cards-subtext,
+.cards-three:hover .cards-subtext,
+.cards-four:hover .cards-subtext {
+  opacity: 1;
+}
 /* Testimonial here*/
 
 /* Call to action here */
