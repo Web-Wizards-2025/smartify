@@ -53,6 +53,10 @@ body {
     padding: 0;
 }
 
+.navbar a:hover {
+    color: #f9faf8cc;
+}
+
 .logo a {
     color: inherit;
     text-decoration: none;
