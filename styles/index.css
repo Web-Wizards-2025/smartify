@@ -8,12 +8,12 @@
 /* Global styles */
 
 * {
-  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif; /* Applies the primary font desired by the guidelines from Google Fonts */
-  margin: 0 auto; /* Centers the body content horizontally and removes default browser margins */
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
 }
 
 /* Header here*/
@@ -23,75 +23,73 @@ body {
 /* === Styles for smallest screens (Mobile-First Defaults) === */
 
 .hero {
-  background-color: #1f2937; /* Sets the background color for the hero section, as per guidelines */
-  width: 100%; /* Ensures the hero section spans the full width of its parent */
-  display: flex; /* Establishes a flex container for its direct children (title-container and image) */
-  flex-direction: column; /* Stacks children vertically on small screens */
-  gap: 2rem; /* Provides spacing between the title container and the image */
-  justify-content: center; /* Centers children vertically within the flex container */
-  align-items: center; /* Centers children horizontally within the flex container */
-  padding: 4rem 1rem; /* Adds internal spacing around the content of the hero section */
-  overflow: hidden; /* Hides any content that overflows the element's box */
+  background-color: #1f2937; /* From guidelines */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  overflow: hidden;
 }
 
 .hero div.title-container {
-  display: flex; /* Establishes a flex container for heading, paragraph, and button */
-  flex-direction: column; /* Stacks text content and button vertically */
-  align-items: center; /* Centers text content and button horizontally within the container */
-  text-align: center; /* Centers text within the h1 and p elements */
-  word-break: break-word; /* Allows long words to break and wrap to the next line on small screens */
-  width: 100%; /* Ensures the container takes full available width */
-  max-width: 600px; /* Limits the maximum width of the text container on larger screens for readability */
-  padding: 0 1rem; /* Adds horizontal padding to the text container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  word-break: break-word;
+  width: 100%;
+  max-width: 600px;
+  padding: 0 1rem;
 }
 
 /* Default font sizes for small screens (Mobile First) */
 .hero h1 {
-  color: #f9faf8; /* Sets the heading text color, as per guidelines */
-  font-size: 2rem; /* Applies a smaller font size suitable for mobile screens (approx 32px) */
-  margin: 0; /* Removes default top/bottom margins to prevent extra spacing issues */
-  line-height: 1.2; /* Ensures good vertical spacing between lines of text for readability */
-  font-weight: 800; /* Sets the font weight to extra bold, as per guidelines */
+  color: #f9faf8; /* From guidelines */
+  font-size: 2rem; /* Smaller font for mobile (approx 32px) */
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 800; /* Extra bold (from guidelines) */
 }
 
 .hero p {
-  color: var(
-    --hero-p-color
-  ); /* Sets the paragraph text color using a CSS variable, as per guidelines */
-  font-size: 1rem; /* Sets a base font size for mobile paragraphs (approx 16px) */
-  width: 100%; /* Ensures paragraph text spans the full width of its container */
-  line-height: 1.5; /* Ensures good vertical spacing between lines of text for readability */
+  color: var(--hero-p-color); /* From guidelines */
+  font-size: 1rem; /* Default font for mobile (approx 16px) */
+  width: 100%;
+  line-height: 1.5;
 }
 
 .hero button {
-  display: inline-block; /* Allows padding and width to be applied while keeping content on one line */
-  background-color: #3882f6; /* Sets the button background color, as per guidelines */
+  display: inline-block;
+  background-color: #3882f6; /* From guidelines */
   color: var(
     --hero-p-color
-  ); /* Uses the same text color as the paragraph for consistency in the hero section */
-  font-weight: 600; /* Sets a semi-bold font weight, chosen to match design feel (not specified in guidelines) */
-  padding: 0.5rem 0.75rem; /* Adds internal spacing around the button text */
-  min-width: 120px; /* Sets a minimum width for the button */
-  width: fit-content; /* Adjusts button width to fit its content if larger than min-width */
-  border-radius: 4px; /* Applies rounded corners to the button */
-  border: none; /* Removes the default browser border for a cleaner look */
-  cursor: pointer; /* Changes cursor to a pointer on hover, indicating interactivity */
-  font-size: 1rem; /* Sets the font size of the button text (same as hero paragraph) */
-  transition: background-color 0.3s ease; /* Adds a smooth transition effect for background color on hover/focus */
+  ); /* The same text color as the paragraph has been used for consistency */
+  font-weight: 600; /* A font weight for the button wasn't provided in the guidelines but it looked somewhat bold in the design file */
+  padding: 0.5rem 0.75rem;
+  min-width: 120px;
+  width: fit-content;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem; /* Same font size as the hero paragraph */
+  transition: background-color 0.3s ease;
 }
 
 .hero button:hover,
 .hero button:focus {
-  background-color: #2b6cb0; /* Applies a slightly darker shade of blue for hover and focus states for accessibility and visual feedback */
+  background-color: #2b6cb0;
 }
 
 .hero img {
-  width: 100%; /* Ensures the image scales to fit 100% of its container's width */
-  max-width: 600px; /* Limits the maximum width of the image to 600px */
-  min-width: 100px; /* Sets a minimum width for the image */
-  border-radius: 8px; /* Applies rounded corners to the image */
-  object-fit: cover; /* Ensures the image covers the area without distorting its aspect ratio */
-  height: auto; /* Maintains the image's aspect ratio when scaling */
+  width: 100%;
+  max-width: 600px;
+  min-width: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  height: auto;
 }
 
 /* ===== HERO SECTION MEDIA QUERIES ===== */
@@ -99,15 +97,11 @@ body {
 /* Tablet-specific styles (screens from 601px up to 1024px) */
 @media (min-width: 601px) and (max-width: 1024px) {
   .hero h1 {
-    font-size: var(
-      --hero-h1-font-size
-    ); /* Sets heading font size to 48px from guidelines for tablets */
+    font-size: var(--hero-h1-font-size); /* From guidelines */
   }
 
   .hero p {
-    font-size: var(
-      --hero-p-font-size
-    ); /* Sets paragraph font size to 18px from guidelines for tablets */
+    font-size: var(--hero-p-font-size); /* From guidelines */
   }
 
   .hero button {
@@ -120,15 +114,15 @@ body {
 /* Desktop-specific styles (screens 1025px and wider) */
 @media (min-width: 1025px) {
   .hero {
-    flex-direction: row; /* Changes layout to horizontal (row) for desktop screens */
-    padding: 6rem 4rem; /* Increases internal spacing for a more expansive desktop layout */
-    gap: 4rem; /* Increases space between the text container and the image on desktop */
+    flex-direction: row;
+    padding: 6rem 4rem;
+    gap: 4rem;
   }
 
   .hero div.title-container {
-    text-align: left; /* Aligns text content to the left on desktop */
-    align-items: flex-start; /* Aligns flex items (text and button) to the start on desktop */
-    word-break: normal; /* Disables forced word breaks, allowing normal wrapping */
+    text-align: left;
+    align-items: flex-start;
+    word-break: normal;
   }
 
   .hero h1 {
