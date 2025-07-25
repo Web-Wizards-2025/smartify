@@ -115,6 +115,8 @@ body {
 
   margin-top: 3.125rem;
   margin-bottom: 1.875rem;
+
+  animation: FadeInFromBottom 2s ease 0s 1 normal forwards;
 }
 
 .cards-one,
@@ -375,6 +377,18 @@ body {
 
 .featured-products {
   text-align: center;
+}
+
+@keyframes FadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Testimonial here*/
