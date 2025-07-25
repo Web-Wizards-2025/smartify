@@ -305,16 +305,41 @@ footer {
 }
 
 footer a {
-    color: #E5E7EB; /* From guidelines */
-    text-decoration: none;
+  color: #E5E7EB; /* From guidelines */
+  text-decoration: none;
 }
 
-.icon {
-    width: 3rem;
-    height: 3rem;
-    background-color: #1F2937; /* From guidelines */
-    object-fit: cover;
-    display: inline-block;
-    margin-left: 1rem;
-    margin-right: 1rem;
+/* footer button design recycled from sign up button from hero */
+footer button {
+  display: inline-block;
+  background-color: #3882f6; /* From guidelines */
+  color: var(--hero-p-color);
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  min-width: 120px;
+  width: fit-content;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+/* button actions  are also recycled from hero */
+footer button:hover,
+footer button:focus {
+  background-color: #2b6cb0;
+}
+.icons {
+  margin-top: 2rem;
+}
+.icons img{
+  width: 3rem;
+  height: 3rem;
+  background-color: #1F2937; /* From guidelines */
+  object-fit: cover;
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
