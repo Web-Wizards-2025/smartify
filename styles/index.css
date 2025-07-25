@@ -1,6 +1,11 @@
-/* Header here*/
+/* Variables for repeated values */
+:root {
+  --hero-h1-font-size: 3rem; /* 48px from guidelines */
+  --hero-p-color: #e5e7eb; /* From guidelines */
+  --hero-p-font-size: 1.125rem; /* 18px from guidelines */
+}
 
-/* Hero here*/
+/* Global styles */
 
 * {
   box-sizing: border-box;
@@ -11,9 +16,14 @@ body {
   margin: 0 auto;
 }
 
-section.hero {
-  background-color: #1f2937;
-  color: #ffffff;
+/* Header here*/
+
+/* Hero here*/
+
+/* === Styles for smallest screens === */
+
+.hero {
+  background-color: #1f2937; /* From guidelines */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -24,89 +34,102 @@ section.hero {
   overflow: hidden;
 }
 
-section.hero div.title-container {
+.hero div.title-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  word-break: break-word;
+  word-break: break-word; /* Good for long words on small screens */
   width: 100%;
-  max-width: 500px;
+  max-width: 600px; /* Limits width of text container on larger screens */
   padding: 0 1rem;
 }
 
-section.hero h1 {
-  color: #f9faf8;
-  font-size: 2rem;
-  margin: 0;
-  line-height: 1.2;
-  font-weight: 800;
+/* Default font sizes for small screens (Mobile First) */
+.hero h1 {
+  color: #f9faf8; /* From guidelines */
+  font-size: 2rem; /* Smaller font for mobile (approx 32px) */
+  margin: 0; /* Prevents collapsing margins */
+  line-height: 1.2; /* Ensures good readability */
+  font-weight: 800; /* Extra bold (from guidelines) */
 }
 
-section.hero p {
-  color: #e5e7eb;
-  font-size: 1.125rem;
+.hero p {
+  color: var(--hero-p-color); /* From guidelines */
+  font-size: 1rem; /* Default font for mobile (approx 16px) */
   width: 100%;
-  line-height: 1.5;
+  line-height: 1.5; /* Ensures good readability */
 }
 
-section.hero button {
+.hero button {
   display: inline-block;
-  background-color: #3882f6;
-  color: #e5e7eb;
-  font-weight: 600;
+  background-color: #3882f6; /* From guidelines */
+  color: var(
+    --hero-p-color
+  ); /* The same text color as the paragraph has been used for the sake of consistency */
+  font-weight: 600; /* A font weight for the button wasn't provided in the guidelines but it looked somewhat bold in the design file */
   padding: 0.5rem 0.75rem;
   min-width: 120px;
   width: fit-content;
   border-radius: 4px;
-  border: none;
+  border: none; /* No default border for a cleaner look */
   cursor: pointer;
-  font-size: 1.125rem;
+  font-size: 1.125rem; /* Same font size as the hero paragraph */
   transition: background-color 0.3s ease;
 }
 
-section.hero button:hover,
-section.hero button:focus {
-  background-color: #2b6cb0;
+.hero button:hover,
+.hero button:focus {
+  background-color: #2b6cb0; /* Slightly darker hue for both hover and focus for accessibility */
 }
 
-section.hero img {
+.hero img {
   width: 100%;
-  max-width: 700px;
+  max-width: 600px;
   min-width: 100px;
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: cover; /* Ensures the image covers the area without stretching */
   height: auto;
 }
 
 /* ===== HERO SECTION MEDIA QUERIES ===== */
 
-@media (min-width: 425px) {
-  section.hero h1 {
-    font-size: 3rem; /* 48px */
+/* Tablet-specific styles (601px to 1024px) */
+/* Here larger font sizes from the guidelines are applied for tablets. */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .hero h1 {
+    font-size: var(--hero-h1-font-size); /* From guidelines */
   }
 
-  section.hero p {
-    font-size: 1.125rem; /* 18px */
+  .hero p {
+    font-size: var(--hero-p-font-size); /* From guidelines */
   }
 }
 
-@media (min-width: 768px) {
-  section.hero {
-    flex-direction: row;
+/* Desktop-specific styles (1025px and up) */
+/* Here we apply the row layout and confirm font sizes for desktops. */
+@media (min-width: 1025px) {
+  .hero {
+    flex-direction: row; /* Desktop: row layout */
+    padding: 6rem 4rem; /* More generous padding for desktop */
+    gap: 4rem; /* More space between text and image on desktop */
   }
 
-  section.hero div.title-container {
-    text-align: left;
-    align-items: flex-start;
+  .hero div.title-container {
+    text-align: left; /* Align text to left on desktop */
+    align-items: flex-start; /* Align elements to start on desktop */
     word-break: normal;
   }
+
+  .hero h1 {
+    font-size: var(
+      --hero-h1-font-size
+    ); /* 48px from guidelines - explicitly setting for desktop to prevent leak */
+  }
+
+  .hero p {
+    font-size: var(
+      --hero-p-font-size
+    ); /* 18px from guidelines - explicitly setting for desktop to prevent leak */
+  }
 }
-
-/* Random Info here*/
-
-/* Testimonial here*/
-
-/* Call To Action here*/
-
-/* Footer here*/
