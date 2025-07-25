@@ -304,16 +304,15 @@ footer {
   text-align: center;
 }
 
-.icon {
-    width: 48px;           /* Set desired size */
-    height: 48px;
-    background-color: #1F2937; /* From guidelines */
-    object-fit: cover;     /* Ensures the image fills the circle */
-    display: inline-block;
+footer a {
+    color: #E5E7EB; /* From guidelines */
+    text-decoration: none;
 }
 
-footer img {
-  width: 100px;
-  height: auto;
-  margin-top: 10px;
+.icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: #1F2937; /* From guidelines */
+    object-fit: cover;
+    display: inline-block;
 }
