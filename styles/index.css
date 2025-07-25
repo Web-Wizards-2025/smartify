@@ -1,5 +1,6 @@
 /* Variables for repeated values */
 :root {
+  --header-logo-color: #F9FAF8; /* Defines the logo color based on design guidelines */
   --hero-h1-font-size: 3rem; /* Defines the heading font size (48px) based on design guidelines */
   --hero-p-color: #e5e7eb; /* Sets the paragraph text color based on design guidelines */
   --hero-p-font-size: 1.125rem; /* Sets the paragraph font size (18px) based on design guidelines */
@@ -48,7 +49,7 @@ body {
 .logo {
     font-size: 1.5rem; /* From guidelines */
     font-weight: bold;
-    color: #F9FAF8; /* From guidelines */
+    color: var(--header-logo-color) /* From guidelines */
     margin-left: 0;
     padding: 0;
 }
@@ -90,7 +91,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0;
-    background-color: #1F2937; /* From guidelines */
+    color: var(--featprod-title-color); /* From guidelines */
   }
 
   .logo {
@@ -111,7 +112,7 @@ body {
 /* === Styles for smallest screens (Mobile-First Defaults) === */
 
 .hero {
-  background-color: #1f2937; /* From guidelines */
+  color: var(--featprod-title-color); /* From guidelines */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -135,7 +136,7 @@ body {
 
 /* Default font sizes for small screens (Mobile First) */
 .hero h1 {
-  color: #f9faf8; /* From guidelines */
+  color: var(--header-logo-color) /* From guidelines */
   font-size: 2rem; /* Smaller font for mobile (approx 32px) */
   margin: 0;
   line-height: 1.2;
