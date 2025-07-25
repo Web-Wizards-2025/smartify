@@ -25,7 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    color: var(--featprod-title-color); /* From guidelines */
+    background-color: var(--featprod-title-color); /* From guidelines */
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
@@ -49,7 +49,7 @@ body {
 .logo {
     font-size: 1.5rem; /* From guidelines */
     font-weight: bold;
-    color: var(--header-logo-color) /* From guidelines */
+    color: var(--header-logo-color); /* From guidelines */
     margin-left: 0;
     padding: 0;
 }
@@ -112,7 +112,7 @@ body {
 /* === Styles for smallest screens (Mobile-First Defaults) === */
 
 .hero {
-  color: var(--featprod-title-color); /* From guidelines */
+  background-color: #1f2937; /* From guidelines */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -136,7 +136,7 @@ body {
 
 /* Default font sizes for small screens (Mobile First) */
 .hero h1 {
-  color: var(--header-logo-color) /* From guidelines */
+  color: #f9faf8; /* From guidelines */
   font-size: 2rem; /* Smaller font for mobile (approx 32px) */
   margin: 0;
   line-height: 1.2;
