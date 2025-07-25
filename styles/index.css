@@ -270,6 +270,32 @@ body {
     width: 200px;
   }
 
+  /* FEATURED PRODUCTS SECTION */
+
+  .cards {
+    gap: 2rem;
+  }
+
+  .cards-column-one,
+  .cards-column-two {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .cards-bg {
+    height: 200px;
+    width: 200px;
+  }
+
+  .cards-one,
+  .cards-two,
+  .cards-three,
+  .cards-four {
+    height: 200px;
+    width: 200px;
+  }
+
   .cards-subtext {
     font-size: 1.75rem;
   }
@@ -327,16 +353,7 @@ body {
 }
 
 .cards-subtext {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #e5e7eb;
-  font-size: 1.5rem;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  pointer-events: none;
-  z-index: 2;
+  font-size: 1.75rem;
 }
 
 .cards-one:hover .cards-bg,
@@ -355,6 +372,11 @@ body {
 .cards-four:hover .cards-subtext {
   opacity: 1;
 }
+
+.featured-products {
+  text-align: center;
+}
+
 /* Testimonial here*/
 
 /* Call to action here */
