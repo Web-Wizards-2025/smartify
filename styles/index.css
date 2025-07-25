@@ -302,7 +302,7 @@ html {
 
 /* Footer here */
 footer {
-  color: var(--featprod-title-color); /* From guidelines */
+  background-color: var(--featprod-title-color); /* From guidelines */
   color: var(--hero-p-color);; /* From guidelines */
   padding: 1rem;
   text-align: center;
