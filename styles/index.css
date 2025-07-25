@@ -18,6 +18,10 @@ body {
   margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth; /* smooth scroll for anchor links */
+}
+
 /* Header here*/
 
 /* Hero here*/
@@ -310,7 +314,7 @@ footer a {
 }
 
 /* footer button design recycled from sign up button from hero */
-footer button {
+.top-button {
   display: inline-block;
   background-color: #3882f6; /* From guidelines */
   color: var(--hero-p-color);
@@ -327,8 +331,8 @@ footer button {
 }
 
 /* button actions  are also recycled from hero */
-footer button:hover,
-footer button:focus {
+.top-button:hover,
+.top-button:focus {
   background-color: #2b6cb0;
 }
 .icons {
