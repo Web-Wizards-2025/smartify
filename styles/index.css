@@ -19,20 +19,24 @@ body {
 }
 
 /* Header here*/
+/* adjusted for mobile use first*/
 .navbar {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     background-color: #1F2937; /* From guidelines */
     justify-content: space-between;
     align-items: center;
+    padding-top: 1rem;
 }
 
 .nav-links {
     display: flex;
     list-style-type: none;
-    margin-right: 10%;
+    margin-right: 0;
     padding: 0;
     justify-content: flex-end;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .nav-links a {
@@ -44,8 +48,8 @@ body {
 .logo {
     font-size: 1.5rem; /* From guidelines */
     font-weight: bold;
-    color: #F9FAF8;
-    margin-left: 10%;
+    color: #F9FAF8; /* From guidelines */
+    margin-left: 0;
     padding: 0;
 }
 
@@ -54,21 +58,24 @@ body {
     text-decoration: none;
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
+/*For desktops specific*/
+@media (min-width: 1025px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+
   .logo {
-    margin-left: 0;
+    margin-left: 7%;
+    margin-bottom: 0;
   }
 
   .nav-links {
-    margin-right: 0;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
+    flex-direction: row;
+    gap: 2rem;
+    margin-right: 7%;
   }
 }
 /* Hero here*/
