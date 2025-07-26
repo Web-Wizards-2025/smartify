@@ -1,12 +1,14 @@
 /* Variables for repeated values */
 :root {
   --header-logo-color: #f9faf8; /* Defines the logo color based on design guidelines */
+  --header-hover-color: #f9faf8cc; /* Defines color when hovering over navbar's items */
   --hero-h1-font-size: 3rem; /* Defines the heading font size (48px) based on design guidelines */
   --hero-p-color: #e5e7eb; /* Sets the paragraph text color based on design guidelines */
   --hero-p-font-size: 1.125rem; /* Sets the paragraph font size (18px) based on design guidelines */
   --featprod-title-color: #1f2937; /*Feature products section title color based on design guidelines*/
   --featprod-title-font-size: 2.25rem; /*Feature products section title size (36px) based on design guidelines*/
   --button-color: #3882f6; /* Accent color used for buttons and backgrounds based on design guidelines */
+  --button-hover-color: #2b6cb0; /* Accent color used when hovering over button */
 }
 
 /* Global styles */
@@ -62,7 +64,7 @@ body {
 }
 
 .navbar a:hover {
-  color: #f9faf8cc;
+  color: var(--header-hover-color);
 }
 
 .logo a {
@@ -73,7 +75,7 @@ body {
 /* Hero here*/
 
 .hero {
-  background-color: #1f2937; /* From guidelines */
+  background-color: var(--featprod-title-color); /* From guidelines */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -96,7 +98,7 @@ body {
 }
 
 .hero h1 {
-  color: #f9faf8; /* From guidelines */
+  color: var(--header-logo-color); /* From guidelines */
   font-size: 2rem; /* Smaller font for mobile (approx 32px) */
   margin: 0;
   line-height: 1.2;
@@ -120,7 +122,7 @@ body {
   padding: 0.5rem 0.75rem;
   min-width: 120px;
   width: fit-content;
-  border-radius: 4px;
+  border-radius: 0.25remm;
   border: none;
   cursor: pointer;
   font-size: 1rem; /* Same font size as the hero paragraph */
@@ -129,14 +131,14 @@ body {
 
 .hero button:hover,
 .hero button:focus {
-  background-color: #2b6cb0;
+  background-color: var(--button-hover-color);
 }
 
 .hero img {
   width: 100%;
   max-width: 600px;
   min-width: 100px;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   object-fit: cover;
   height: auto;
 }
@@ -175,7 +177,7 @@ body {
   margin-bottom: 1.875rem;
 
   border: solid 2px var(--button-color);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   height: 150px;
   width: 150px;
 }
@@ -192,7 +194,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #e5e7eb;
+  color: var(--hero-p-color);
   font-size: 1.3rem;
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -223,7 +225,7 @@ body {
   width: 100%;
   margin: 2.5rem auto; /* 40px */
   padding: 2.75rem 2rem 2rem 2rem; /* 44px 32px 32px 32px */
-  background: #e5e7eb;
+  background: var(--hero-p-color);
   box-sizing: border-box;
 }
 
@@ -231,7 +233,7 @@ body {
   font-size: 2.25rem; /* 36px */
   font-style: italic;
   font-weight: 300;
-  color: #1f2937;
+  color: var(--featprod-title-color);
   line-height: 1.3;
   letter-spacing: 0.01em;
   text-align: center;
@@ -239,7 +241,7 @@ body {
 }
 
 .testimonial-author {
-  color: #1f2937;
+  color: var(--featprod-title-color);
   font-size: 1.375rem; /* 22px */
   font-weight: 700;
   text-align: right;
@@ -266,7 +268,7 @@ body {
 
 .cta-info p {
   text-align: center;
-  color: #e5e7eb;
+  color: var(--hero-p-color);
   font-size: 0.9rem;
 }
 
@@ -285,7 +287,7 @@ body {
 }
 
 .cta-signup-btn:hover {
-  background: #fff;
+  background: var(--header-logo-color);
   color: var(--button-color);
 }
 
@@ -312,7 +314,7 @@ footer a {
   padding: 0.5rem 0.75rem;
   min-width: 120px;
   width: fit-content;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   border: none;
   cursor: pointer;
   font-size: 1rem;
@@ -323,7 +325,7 @@ footer a {
 /* button actions  are also recycled from hero */
 .top-button:hover,
 .top-button:focus {
-  background-color: #2b6cb0;
+  background-color: var(--button-hover-color);
 }
 .icons {
   margin-top: 2rem;
@@ -402,6 +404,15 @@ footer a {
     font-size: 1.7rem;
   }
 
+  /* TESTIMONIAL SECTION */
+
+  .testimonial-quote {
+    margin-block: 5rem;
+    padding: 3.75rem;
+    background: var(--hero-p-color);
+    box-sizing: border-box;
+  }
+
   /* CALL TO ACTION SECTION */
 
   .cta {
@@ -434,7 +445,7 @@ footer a {
     align-self: center;
     font-size: 0.92rem;
     padding-inline: 2rem;
-    padding-block: 14px;
+    padding-block: 0.875rem;
   }
 
   .cta-info h2 {
@@ -547,6 +558,20 @@ footer a {
   .cards-three:hover .cards-subtext,
   .cards-four:hover .cards-subtext {
     opacity: 1;
+  }
+
+  /* TESTIMONIAL SECTION */
+
+  .testimonial-quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 400px;
+    margin-block: 7.5rem;
+    padding-inline: 12.5rem;
+    padding-block: 3.125rem;
   }
 
   /* CALL TO ACTION SECTION*/

@@ -131,7 +131,7 @@ main {
 .card-btn {
   background-color: var(--button-color); /* From guidelines */
   border: none;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   color: var(--hero-p-color);
   font-weight: 600;
   font-size: 1rem;
