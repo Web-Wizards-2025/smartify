@@ -1,0 +1,324 @@
+:root {
+  --header-logo-color: #f9faf8; /* Defines the logo color based on design guidelines */
+  --hero-h1-font-size: 3rem; /* Defines the heading font size (48px) based on design guidelines */
+  --hero-p-color: #e5e7eb; /* Sets the paragraph text color based on design guidelines */
+  --hero-p-font-size: 1.125rem; /* Sets the paragraph font size (18px) based on design guidelines */
+  --featprod-title-color: #1f2937; /*Feature products section title color based on design guidelines*/
+  --featprod-title-font-size: 2.25rem; /*Feature products section title size (36px) based on design guidelines*/
+  --button-color: #3882f6; /*Color used for a button and accent background based on design guidelines*/
+  --button-hover-color: #2b6cb0; /* Color used for hovering over button*/
+}
+
+/* Global styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+}
+
+main {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signup-info {
+  text-align: center;
+
+  animation: FadeInTop 2s ease 0s 1 normal forwards;
+}
+
+.signup-info h1 h3 {
+  color: var(--featprod-title-color);
+}
+
+.signup-info strong {
+  color: var(--button-color);
+}
+
+.card {
+  background-image: url("../../assets/images/singup-wave.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  border-radius: 0.938rem;
+  height: 350px;
+  width: 350px;
+
+  box-shadow: 0.313rem 0.625rem 1.375rem -0.063rem rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0.313rem 0.625rem 1.375rem -0.063rem rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0.313rem 0.625rem 1.375rem -0.063rem rgba(0, 0, 0, 0.75);
+
+  animation: FadeInBot 2s ease 0s 1 normal forwards;
+}
+
+.card-top {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+
+  font-size: 1.875rem;
+  color: var(--header-logo-color);
+
+  margin-block: 1.25rem;
+}
+
+.card-top h4 {
+  margin: 0;
+  margin-left: -2.5rem;
+}
+
+.card-top img {
+  position: relative;
+  right: 6.25rem;
+
+  height: 32px;
+  width: 32px;
+
+  cursor: pointer;
+}
+
+.card-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  width: 80%;
+}
+
+.card-form label {
+  color: var(--header-logo-color);
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 0.313rem;
+}
+
+.card-form input {
+  border: solid 2px var(--featprod-title-color);
+  border-radius: 0.5rem;
+  background-color: var(--header-logo-color);
+  height: 1.875rem;
+  width: 100%;
+
+  margin-bottom: 0.625rem;
+}
+
+.card-form input:focus {
+  outline: none;
+}
+
+.card-form input::placeholder {
+  color: var(--button-color);
+  padding-left: 0.313rem;
+}
+
+.card-btn {
+  background-color: var(--button-color); /* From guidelines */
+  border: none;
+  border-radius: 0.25rem;
+  color: var(--hero-p-color);
+  font-weight: 600;
+  font-size: 1rem;
+
+  min-width: 120px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+
+  padding: 0.5rem 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.card-btn:hover,
+.card-btn:focus {
+  background-color: var(--button-hover-color);
+}
+
+@media (min-width: 601px) and (max-width: 850px) {
+  .signup-info h1,
+  h3,
+  strong {
+    font-size: 1.875rem;
+  }
+
+  .card {
+    height: 500px;
+    width: 500px;
+  }
+
+  .card-top img {
+    right: 10rem;
+  }
+
+  .card-form {
+    margin-top: 0.938rem;
+  }
+
+  .card-form label {
+    font-size: 1.25rem;
+  }
+
+  .card-form input {
+    margin-bottom: 1.25rem;
+    height: 40px;
+  }
+
+  .card-form input::placeholder {
+    font-size: 1rem;
+  }
+
+  .card-btn {
+    font-size: 1.2rem;
+
+    height: 50px;
+    width: 180px;
+  }
+}
+
+@media (min-width: 851px) and (max-width: 1024px) {
+  .signup-info h1,
+  h3,
+  strong {
+    font-size: 3.125rem;
+    margin-top: 0;
+  }
+
+  .card {
+    height: 650px;
+    width: 650px;
+  }
+
+  .card-top h4 {
+    font-size: 3rem;
+  }
+
+  .card-top img {
+    right: 11.25rem;
+
+    height: 48px;
+    width: 48px;
+
+    margin-top: 0.313rem;
+  }
+
+  .card-form {
+    margin-top: 0.938rem;
+  }
+
+  .card-form label {
+    font-size: 2.063;
+  }
+
+  .card-form input {
+    margin-bottom: 1.25rem;
+    height: 55px;
+  }
+
+  .card-form input::placeholder {
+    font-size: 1.438rem;
+    padding-left: 0.5rem;
+  }
+
+  .card-btn {
+    font-size: 1.7rem;
+
+    height: 80px;
+    width: 240px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .signup-info h1,
+  h3,
+  strong {
+    font-size: 3.125rem;
+    margin-top: 0;
+  }
+
+  .signup-info h3 {
+    font-size: 1.875rem;
+  }
+
+  .card {
+    height: 550px;
+    width: 550px;
+  }
+
+  .card-top h4 {
+    font-size: 2.5rem;
+  }
+
+  .card-top img {
+    right: 10rem;
+
+    height: 40px;
+    width: 40px;
+
+    margin-top: 0.313rem;
+  }
+
+  .card-form {
+    margin-top: 0.938rem;
+  }
+
+  .card-form label {
+    font-size: 1.563rem;
+  }
+
+  .card-form input {
+    margin-bottom: 1.25rem;
+    height: 40px;
+  }
+
+  .card-form input::placeholder {
+    font-size: 1.125rem;
+    padding-left: 0.5rem;
+  }
+
+  .card-btn {
+    font-size: 1.3rem;
+
+    height: 50px;
+    width: 180px;
+  }
+}
+
+@keyframes FadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes FadeInBot {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
