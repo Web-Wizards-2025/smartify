@@ -1,0 +1,42 @@
+:root {
+  --header-logo-color: #f9faf8; /* Defines the logo color based on design guidelines */
+  --header-hover-color: #f9faf8cc; /* Defines color when hovering over navbar's items */
+  --hero-h1-font-size: 3rem; /* Defines the heading font size (48px) based on design guidelines */
+  --hero-p-color: #e5e7eb; /* Sets the paragraph text color based on design guidelines */
+  --hero-p-font-size: 1.125rem; /* Sets the paragraph font size (18px) based on design guidelines */
+  --featprod-title-color: #1f2937; /*Feature products section title color based on design guidelines*/
+  --featprod-title-font-size: 2.25rem; /*Feature products section title size (36px) based on design guidelines*/
+  --button-color: #3882f6; /* Accent color used for buttons and backgrounds based on design guidelines */
+  --button-hover-color: #2b6cb0; /* Accent color used when hovering over button */
+}
+
+/* Global styles */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* smooth scroll for anchor links */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+}
+
+/*========== MOBILE FIRST ==========*/
+
+/* HEADER */
+
+/* PRODUCTS */
+
+/* FOOTER */
+
+/*========== TABLET QUERY ==========*/
+@media (min-width: 601px) and (max-width: 1024px) {
+}
+
+/*========== DESKTOP QUERY ==========*/
+@media (min-width: 1025px) {
+}
