@@ -132,6 +132,19 @@ body {
 
 /*========== TABLET QUERY ==========*/
 @media (min-width: 601px) and (max-width: 1024px) {
+  .product-container h2 {
+    font-size: var(--hero-h1-font-size); /* From guidelines */
+  }
+
+  .product-container p {
+    font-size: var(--hero-p-font-size); /* From guidelines */
+  }
+
+  .product-container button {
+    font-size: var(
+      --hero-p-font-size
+    ); /* Sets button font size to 18px, matching the paragraph font size */
+  }
 }
 
 /*========== DESKTOP QUERY ==========*/
