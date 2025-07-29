@@ -28,7 +28,47 @@ body {
 /*========== MOBILE FIRST ==========*/
 
 /* HEADER */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--featprod-title-color); /* From guidelines */
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
 
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  margin-right: 0;
+  padding: 0;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: var(--hero-p-color);
+  text-decoration: none;
+  font-size: var(--hero-p-font-size);
+}
+
+.logo {
+  font-size: 1.5rem; /* From guidelines */
+  font-weight: bold;
+  color: var(--header-logo-color); /* From guidelines */
+  margin-left: 0;
+  padding: 0;
+}
+
+.navbar a:hover {
+  color: var(--header-hover-color);
+}
+
+.logo a {
+  color: inherit;
+  text-decoration: none;
+}
 /* PRODUCTS */
 
 h1 {
@@ -130,9 +170,56 @@ h1 {
 }
 
 /* FOOTER */
+footer {
+  background-color: var(--featprod-title-color); /* From guidelines */
+  color: var(--hero-p-color); /* From guidelines */
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--hero-p-color); /* From guidelines */
+  text-decoration: none;
+}
+
+/* footer button design recycled from sign up button from hero */
+.top-button {
+  display: inline-block;
+  background-color: var(--button-color); /* From guidelines */
+  color: var(--hero-p-color);
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  min-width: 120px;
+  width: fit-content;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+/* button actions  are also recycled from hero */
+.top-button:hover,
+.top-button:focus {
+  background-color: var(--button-hover-color);
+}
+.icons {
+  margin-top: 2rem;
+}
+.icons img {
+  width: 3rem;
+  height: 3rem;
+  color: var(--featprod-title-color); /* From guidelines */
+  object-fit: cover;
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
 /*========== TABLET QUERY ==========*/
 @media (min-width: 601px) and (max-width: 1024px) {
+<<<<<<< HEAD
   /* PRODUCTS SECTION */
   h1 {
     font-size: 4rem;
@@ -148,11 +235,49 @@ h1 {
 
   .product-container button {
     font-size: var(--hero-p-font-size);
+=======
+  /* PRODUCTS SECTION */
+  h1 {
+    font-size: 4rem;
+  }
+
+  .product-container h2 {
+    font-size: var(--hero-h1-font-size);
+  }
+
+  .product-container p {
+    font-size: var(--hero-p-font-size);
+  }
+
+  .product-container button {
+    font-size: var(--hero-p-font-size);    
+  }
+/* HEADER */
+
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    color: var(--featprod-title-color); /* From guidelines */
+  }
+
+  .logo {
+    margin-left: 10%;
+    margin-bottom: 0;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 2rem;
+    margin-right: 10%;
+>>>>>>> 284a201 (3 - feat: featured products header and footer css)
   }
 }
 
 /*========== DESKTOP QUERY ==========*/
 @media (min-width: 1025px) {
+<<<<<<< HEAD
   /* PRODUCTS SECTION */
   h1 {
     font-size: 4rem;
@@ -184,5 +309,56 @@ h1 {
 
   .product-container:nth-child(even) picture {
     order: -1;
+=======
+  /* PRODUCTS SECTION */
+  h1 {
+    font-size: 4rem;
+  }
+
+  .product-container {
+    flex-direction: row;
+    padding: 6rem 4rem;
+    gap: 4rem;
+  }
+
+  .product-container article.product-header {
+    text-align: left;
+    align-items: flex-start;
+    word-break: normal;
+  }
+
+  .product-container h2 {
+    font-size: var(--hero-h1-font-size);
+  }
+
+  .product-container p {
+    font-size: var(--hero-p-font-size);
+  }
+
+  .product-container button {
+    font-size: var(--hero-p-font-size);
+  }
+
+  .product-container:nth-child(even) picture {
+    order: -1;
+  }
+  /* HEADER */
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .logo {
+    margin-left: 7%;
+    margin-bottom: 0;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 2rem;
+    margin-right: 7%;
+>>>>>>> 284a201 (3 - feat: featured products header and footer css)
   }
 }
