@@ -31,6 +31,103 @@ body {
 
 /* PRODUCTS */
 
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  overflow: hidden;
+}
+
+.product-container .product-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  word-break: break-word;
+  width: 100%;
+  max-width: 600px;
+  padding: 0 1rem;
+}
+
+.product-container h2 {
+  font-size: 2rem; /* Smaller font for mobile (approx 32px) */
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 800; /* Extra bold (from guidelines) */
+}
+
+.product-container p {
+  font-size: 1rem; /* Default font for mobile (approx 16px) */
+  width: 100%;
+  line-height: 1.5;
+}
+
+.blue-bg {
+  background-color: var(--featprod-title-color);
+}
+
+.blue-bg h2 {
+  color: var(--header-logo-color);
+}
+
+.blue-bg p {
+  color: var(--hero-p-color);
+}
+
+.white-bg {
+  background-color: #ffffff;
+}
+
+.white-bg h2 {
+  color: #000000;
+}
+
+.white-bg p {
+  color: #000000;
+}
+
+.product-container button {
+  display: inline-block;
+  background-color: var(--button-color); /* From guidelines */
+  color: var(
+    --hero-p-color
+  ); /* The same text color as the paragraph has been used for consistency */
+  font-weight: 600; /* A font weight for the button wasn't provided in the guidelines but it looked somewhat bold in the design file */
+  padding: 0.5rem 0.75rem;
+  min-width: 120px;
+  width: fit-content;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem; /* Same font size as the hero paragraph */
+  transition: background-color 0.3s ease;
+}
+
+.product-container button:hover,
+.product-container button:focus {
+  background-color: var(--button-hover-color);
+}
+
+.product-container img {
+  width: 100%;
+  max-width: 600px;
+  min-width: 100px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  height: auto;
+}
+
 /* FOOTER */
 
 /*========== TABLET QUERY ==========*/
