@@ -217,23 +217,6 @@ footer a {
 
 /*========== TABLET QUERY ==========*/
 @media (min-width: 601px) and (max-width: 1024px) {
-<<<<<<< HEAD
-  /* PRODUCTS SECTION */
-  h1 {
-    font-size: 4rem;
-  }
-
-  .product-container h2 {
-    font-size: var(--hero-h1-font-size);
-  }
-
-  .product-container p {
-    font-size: var(--hero-p-font-size);
-  }
-
-  .product-container button {
-    font-size: var(--hero-p-font-size);
-=======
   /* PRODUCTS SECTION */
   h1 {
     font-size: 4rem;
@@ -269,45 +252,11 @@ footer a {
     flex-direction: row;
     gap: 2rem;
     margin-right: 10%;
->>>>>>> 284a201 (3 - feat: featured products header and footer css)
   }
 }
 
 /*========== DESKTOP QUERY ==========*/
 @media (min-width: 1025px) {
-<<<<<<< HEAD
-  /* PRODUCTS SECTION */
-  h1 {
-    font-size: 4rem;
-  }
-
-  .product-container {
-    flex-direction: row;
-    padding: 6rem 4rem;
-    gap: 4rem;
-  }
-
-  .product-container article.product-header {
-    text-align: left;
-    align-items: flex-start;
-    word-break: normal;
-  }
-
-  .product-container h2 {
-    font-size: var(--hero-h1-font-size);
-  }
-
-  .product-container p {
-    font-size: var(--hero-p-font-size);
-  }
-
-  .product-container button {
-    font-size: var(--hero-p-font-size);
-  }
-
-  .product-container:nth-child(even) picture {
-    order: -1;
-=======
   /* PRODUCTS SECTION */
   h1 {
     font-size: 4rem;
@@ -357,6 +306,5 @@ footer a {
     flex-direction: row;
     gap: 2rem;
     margin-right: 7%;
->>>>>>> 284a201 (3 - feat: featured products header and footer css)
   }
 }
