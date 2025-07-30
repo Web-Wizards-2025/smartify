@@ -17,7 +17,7 @@
 }
 
 html {
-  scroll-behavior: smooth; /* smooth scroll for anchor links */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -61,14 +61,14 @@ body {
 }
 
 .product-container h2 {
-  font-size: 2rem; /* Smaller font for mobile (approx 32px) */
+  font-size: 2rem;
   margin: 0;
   line-height: 1.2;
-  font-weight: 800; /* Extra bold (from guidelines) */
+  font-weight: 800;
 }
 
 .product-container p {
-  font-size: 1rem; /* Default font for mobile (approx 16px) */
+  font-size: 1rem;
   width: 100%;
   line-height: 1.5;
 }
@@ -92,18 +92,16 @@ body {
 
 .product-container button {
   display: inline-block;
-  background-color: var(--button-color); /* From guidelines */
-  color: var(
-    --hero-p-color
-  ); /* The same text color as the paragraph has been used for consistency */
-  font-weight: 600; /* A font weight for the button wasn't provided in the guidelines but it looked somewhat bold in the design file */
+  background-color: var(--button-color);
+  color: var(--hero-p-color);
+  font-weight: 600;
   padding: 0.5rem 0.75rem;
   min-width: 120px;
   width: fit-content;
   border-radius: 0.25rem;
   border: none;
   cursor: pointer;
-  font-size: 1rem; /* Same font size as the hero paragraph */
+  font-size: 1rem;
   transition: background-color 0.3s ease;
 }
 
@@ -127,17 +125,15 @@ body {
 @media (min-width: 601px) and (max-width: 1024px) {
   /* PRODUCTS SECTION */
   .product-container h2 {
-    font-size: var(--hero-h1-font-size); /* From guidelines */
+    font-size: var(--hero-h1-font-size);
   }
 
   .product-container p {
-    font-size: var(--hero-p-font-size); /* From guidelines */
+    font-size: var(--hero-p-font-size);
   }
 
   .product-container button {
-    font-size: var(
-      --hero-p-font-size
-    ); /* Sets button font size to 18px, matching the paragraph font size */
+    font-size: var(--hero-p-font-size);
   }
 }
 
@@ -157,24 +153,18 @@ body {
   }
 
   .product-container h2 {
-    font-size: var(
-      --hero-h1-font-size
-    ); /* Confirms 48px heading font size for desktop, inheriting from variable */
+    font-size: var(--hero-h1-font-size);
   }
 
   .product-container p {
-    font-size: var(
-      --hero-p-font-size
-    ); /* Confirms 18px paragraph font size for desktop, inheriting from variable */
+    font-size: var(--hero-p-font-size);
   }
 
   .product-container button {
-    font-size: var(
-      --hero-p-font-size
-    ); /* Confirms 18px button font size for desktop, matching paragraph */
+    font-size: var(--hero-p-font-size);
   }
 
-  .product-container:nth-child(even) figure {
+  .product-container:nth-child(even) picture {
     order: -1;
   }
 }
