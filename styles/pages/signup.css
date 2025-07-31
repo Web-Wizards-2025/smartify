@@ -58,8 +58,8 @@ main {
   flex-direction: column;
 
   border-radius: 0.938rem;
-  height: 350px;
-  width: 350px;
+  height: 21.875rem;
+  width: 21.875rem;
 
   box-shadow: 0.313rem 0.625rem 1.375rem -0.063rem rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0.313rem 0.625rem 1.375rem -0.063rem rgba(0, 0, 0, 0.75);
@@ -88,8 +88,8 @@ main {
   position: relative;
   right: 6.25rem;
 
-  height: 32px;
-  width: 32px;
+  height: 2rem;
+  width: 2rem;
 
   cursor: pointer;
 }
@@ -158,8 +158,8 @@ main {
   }
 
   .card {
-    height: 500px;
-    width: 500px;
+    height: 31.25rem;
+    width: 31.25rem;
   }
 
   .card-top img {
@@ -176,7 +176,7 @@ main {
 
   .card-form input {
     margin-bottom: 1.25rem;
-    height: 40px;
+    height: 2.5rem;
   }
 
   .card-form input::placeholder {
@@ -186,8 +186,8 @@ main {
   .card-btn {
     font-size: 1.2rem;
 
-    height: 50px;
-    width: 180px;
+    height: 3.125rem;
+    width: 11.25rem;
   }
 }
 
@@ -200,8 +200,8 @@ main {
   }
 
   .card {
-    height: 650px;
-    width: 650px;
+    height: 40.625rem;
+    width: 40.625rem;
   }
 
   .card-top h4 {
@@ -211,8 +211,8 @@ main {
   .card-top img {
     right: 11.25rem;
 
-    height: 48px;
-    width: 48px;
+    height: 3rem;
+    width: 3rem;
 
     margin-top: 0.313rem;
   }
@@ -227,7 +227,7 @@ main {
 
   .card-form input {
     margin-bottom: 1.25rem;
-    height: 55px;
+    height: 3.438rem;
   }
 
   .card-form input::placeholder {
@@ -238,8 +238,8 @@ main {
   .card-btn {
     font-size: 1.7rem;
 
-    height: 80px;
-    width: 240px;
+    height: 5rem;
+    width: 15rem;
   }
 }
 
@@ -256,8 +256,8 @@ main {
   }
 
   .card {
-    height: 550px;
-    width: 550px;
+    height: 34.375rem;
+    width: 34.375rem;
   }
 
   .card-top h4 {
@@ -267,8 +267,8 @@ main {
   .card-top img {
     right: 10rem;
 
-    height: 40px;
-    width: 40px;
+    height: 2.5rem;
+    width: 2.5rem;
 
     margin-top: 0.313rem;
   }
@@ -283,7 +283,7 @@ main {
 
   .card-form input {
     margin-bottom: 1.25rem;
-    height: 40px;
+    height: 2.5rem;
   }
 
   .card-form input::placeholder {
@@ -294,8 +294,8 @@ main {
   .card-btn {
     font-size: 1.3rem;
 
-    height: 50px;
-    width: 180px;
+    height: 3.125rem;
+    width: 11.25rem;
   }
 }
 

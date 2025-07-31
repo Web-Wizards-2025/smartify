@@ -178,15 +178,15 @@ body {
 
   border: solid 2px var(--button-color);
   border-radius: 0.5rem;
-  height: 150px;
-  width: 150px;
+  height: 9.375rem;
+  width: 9.375rem;
 }
 
 .cards-bg {
   object-fit: cover;
   transition: filter 0.4s ease;
-  height: 150px;
-  width: 150px;
+  height: 9.375rem;
+  width: 9.375rem;
 }
 
 .cards-subtext {
@@ -387,16 +387,16 @@ footer a {
   }
 
   .cards-bg {
-    height: 200px;
-    width: 200px;
+    height: 12.5rem;
+    width: 12.5rem;
   }
 
   .cards-one,
   .cards-two,
   .cards-three,
   .cards-four {
-    height: 200px;
-    width: 200px;
+    height: 12.5rem;
+    width: 12.5rem;
   }
 
   .cards-subtext {
@@ -526,16 +526,16 @@ footer a {
   }
 
   .cards-bg {
-    height: 200px;
-    width: 200px;
+    height: 12.5rem;
+    width: 12.5rem;
   }
 
   .cards-one,
   .cards-two,
   .cards-three,
   .cards-four {
-    height: 200px;
-    width: 200px;
+    height: 12.5rem;
+    width: 12.5rem;
   }
 
   .cards-subtext {
@@ -567,7 +567,7 @@ footer a {
     justify-content: center;
     align-items: center;
 
-    height: 400px;
+    height: 25rem;
     margin-block: 7.5rem;
     padding-inline: 12.5rem;
     padding-block: 3.125rem;
