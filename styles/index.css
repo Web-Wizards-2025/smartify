@@ -175,10 +175,18 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.875rem;
+  margin-inline: 0;
 
   border: solid 2px var(--button-color);
   border-radius: 0.5rem;
   height: 9.375rem;
+  width: 9.375rem;
+}
+
+.cards-one a,
+.cards-two a,
+.cards-three a,
+.cards-four a {
   width: 9.375rem;
 }
 
@@ -285,6 +293,7 @@ body {
   transition: background 0.2s, color 0.2s;
   white-space: nowrap;
   text-decoration: none;
+  text-align: center;
 }
 
 .cta-signup-btn:hover {
@@ -396,6 +405,13 @@ footer a {
   .cards-three,
   .cards-four {
     height: 12.5rem;
+    width: 12.5rem;
+  }
+
+  .cards-one a,
+  .cards-two a,
+  .cards-three a,
+  .cards-four a {
     width: 12.5rem;
   }
 
@@ -535,6 +551,13 @@ footer a {
   .cards-three,
   .cards-four {
     height: 12.5rem;
+    width: 12.5rem;
+  }
+
+  .cards-one a,
+  .cards-two a,
+  .cards-three a,
+  .cards-four a {
     width: 12.5rem;
   }
 
